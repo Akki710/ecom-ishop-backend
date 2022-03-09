@@ -1,8 +1,9 @@
 // Imports
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors");
 require('dotenv').config();
+const cors = require("cors");
+
 // Import routes
 const categoryRoutes = require("./routes/category");
 const productRoutes = require("./routes/product");
@@ -14,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 // DB connection
 
-mongoose.connect(process.env.DB,{useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(process.env.DB)
   .then(() => console.log("Database CONNECTED"))
   .catch((err) => console.log("Error occured : ", err));
 
