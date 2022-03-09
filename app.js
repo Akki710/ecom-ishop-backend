@@ -15,7 +15,8 @@ const PORT = process.env.PORT || 5000;
 const uri='mongodb+srv://akki710:@test-cluster.frzty.mongodb.net/EcomDB?retryWrites=true&w=majority'
 
 // DB connection
-mongoose.connect( process.env.DB ,{useNewUrlParser: true, useUnifiedTopology: true})
+
+mongoose.connect(process.env.DB,{useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => console.log("Database CONNECTED"))
   .catch((err) => console.log("Error occured : ", err));
 
