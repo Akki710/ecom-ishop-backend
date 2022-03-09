@@ -13,7 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // DB connection
-mongoose.connect(process.env.MONGO_URI ,{useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://akki710:9251620198@test-cluster.frzty.mongodb.net/EcomDB?retryWrites=true&w=majority' ,{useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true})
   .then(() => console.log("Database CONNECTED"))
   .catch((err) => console.log("Error occured : ", err));
 
