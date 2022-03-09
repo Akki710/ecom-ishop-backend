@@ -1,7 +1,7 @@
 // Imports
 const express = require("express");
 const mongoose = require("mongoose");
-require('dotenv').config();
+require('dotenv').config({ path: 'ENV_FILENAME' });
 const cors = require("cors");
 // Import routes
 const categoryRoutes = require("./routes/category");
