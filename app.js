@@ -1,9 +1,8 @@
 // Imports
-var dotenv=require('dotenv');
-dotenv.config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+require('dotenv').config();
 // Import routes
 const categoryRoutes = require("./routes/category");
 const productRoutes = require("./routes/product");
@@ -12,7 +11,6 @@ const app = express();
 
 // Port
 const PORT = process.env.PORT || 5000;
-const uri='mongodb+srv://akki710:@test-cluster.frzty.mongodb.net/EcomDB?retryWrites=true&w=majority'
 
 // DB connection
 
