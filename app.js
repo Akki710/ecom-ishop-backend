@@ -8,7 +8,7 @@ const categoryRoutes = require("./routes/category");
 const productRoutes = require("./routes/product");
 // Calling express method
 const app = express();
-const url=process.env.URL;
+const url=process.env.URI;
 
 // Port
 const PORT = process.env.PORT || 5000;
